@@ -1,0 +1,10 @@
+.schedule{
+    -fx-border-color: #f4fffa;
+    -fx-border-width: 3;
+    -fx-border-radius: 5;
+}
+.schedule_head{
+    -fx-background-color: #f48042;
+    -fx-border-radius: 5;
+
+}

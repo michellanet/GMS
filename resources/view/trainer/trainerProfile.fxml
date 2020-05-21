@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+
+<VBox fx:id="profilePane" prefHeight="712.0" prefWidth="861.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gms.controller.trainer.ProfileController">
+    <children>
+        <HBox prefHeight="90.0" prefWidth="200.0">
+            <children>
+                <VBox prefHeight="61.0" prefWidth="771.0">
+                    <children>
+                        <HBox prefHeight="90.0" prefWidth="771.0">
+                            <children>
+                                <Label prefHeight="92.0" prefWidth="126.0" text="Profile" textFill="#efddf2">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox prefHeight="60.0">
+            <children>
+                <Label fx:id="fName" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="189.0" textFill="#efddf2">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox prefHeight="27.0" prefWidth="574.0">
+            <children>
+                <Label prefHeight="27.0" prefWidth="156.0" text="Name" textFill="#efddf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Label>
+                <Label fx:id="fullName" contentDisplay="CENTER" prefHeight="27.0" prefWidth="253.0" textFill="#efddf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox prefHeight="25.0" prefWidth="574.0">
+            <children>
+                <Label contentDisplay="CENTER" prefHeight="25.0" prefWidth="157.0" text="Trainer ID" textFill="#efddf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Label>
+                <Label fx:id="trainerID" contentDisplay="CENTER" prefHeight="26.0" prefWidth="210.0" textFill="#efddf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox prefHeight="27.0" prefWidth="445.0">
+            <children>
+                <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="154.0" text="Phone" textFill="#efddf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="phone" editable="false" prefHeight="38.0" prefWidth="277.0">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <HBox prefHeight="29.0" prefWidth="574.0">
+            <children>
+                <Label contentDisplay="CENTER" prefHeight="29.0" prefWidth="153.0" text="Email" textFill="#efddf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="email" editable="false" prefHeight="38.0" prefWidth="277.0">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </TextField>
+            </children>
+        </HBox>
+        <VBox spacing="10.0">
+            <children>
+                <Label text="Experience" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="experience" editable="false" prefHeight="111.0" prefWidth="822.0" />
+            </children>
+            <VBox.margin>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </VBox.margin>
+        </VBox>
+        <HBox alignment="CENTER">
+            <children>
+                <Button fx:id="update" mnemonicParsing="false" onAction="#updateClicked" prefHeight="31.0" prefWidth="138.0" text="Update" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

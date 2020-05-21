@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="about" prefHeight="712.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox prefHeight="90.0" prefWidth="200.0">
+            <children>
+                <VBox prefHeight="61.0" prefWidth="771.0">
+                    <children>
+                        <HBox prefHeight="90.0" prefWidth="771.0">
+                            <children>
+                                <Label prefHeight="92.0" text="About Gym Management System and Scheduler" textFill="#efddf2">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+      <HBox prefHeight="0.5" style="-fx-background-color: #dee2f4;" />
+        <HBox prefHeight="0.5" VBox.vgrow="NEVER">
+         <children>
+            <VBox spacing="10.0">
+               <children>
+                  <Label text="Software Developed by  SPM Group" textFill="#89e0f0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Sajit Khadka" textFill="#89e0f0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Michael Anetor" textFill="#89e0f0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Prekshya Aryal" textFill="#89e0f0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="All Rights Reserved. 2019" textFill="#89e0f0">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </VBox>
+         </children></HBox>
+    </children>
+</VBox>

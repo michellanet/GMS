@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="profilePane" prefHeight="712.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gms.controller.member.ProfileController">
+        <children>
+            <HBox prefHeight="90.0" prefWidth="200.0">
+                <children>
+                    <VBox prefHeight="90.0" prefWidth="875.0">
+                        <children>
+                            <HBox minHeight="-Infinity" prefHeight="90.0">
+                                <children>
+                                    <Label prefHeight="90.0" prefWidth="198.0" text="Profile" textFill="#efddf2">
+                                        <font>
+                                            <Font name="Arial Rounded MT Bold" size="24.0" />
+                                        </font>
+                                        <HBox.margin>
+                                            <Insets left="40.0" />
+                                        </HBox.margin>
+                                    </Label>
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <HBox minHeight="-Infinity" prefHeight="0.5" style="-fx-background-color: #dee2f4;" VBox.vgrow="NEVER" />
+            <HBox prefHeight="60.0">
+                <children>
+                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="266.0" text="Welcome, Sajit Khadka" textFill="#efddf2">
+                        <font>
+                            <Font name="System Bold" size="19.0" />
+                        </font>
+                    </Label>
+            <Button fx:id="buttonEdit" mnemonicParsing="false" onAction="#editProfile" prefHeight="2.0" prefWidth="128.0" text="Edit Profile">
+               <HBox.margin>
+                  <Insets left="10.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+                    <!--
+            <Button fx:id="buttonChangePassword" mnemonicParsing="false" prefHeight="18.0" prefWidth="158.0" text="Change Password">
+               <HBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            -->
+                </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="861.0">
+                <children>
+                    <Label prefHeight="27.0" prefWidth="235.0" text="Name" textFill="#efddf2">
+                        <font>
+                            <Font name="System Bold" size="17.0" />
+                        </font>
+                        <HBox.margin>
+                            <Insets left="40.0" />
+                        </HBox.margin>
+                    </Label>
+                    <Label fx:id="full_name" contentDisplay="CENTER" prefHeight="27.0" prefWidth="292.0" text="Sajit Khadka" textFill="#efddf2">
+                        <font>
+                            <Font name="System Bold" size="17.0" />
+                        </font>
+                    </Label>
+                </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+            </HBox>
+            <HBox prefHeight="39.0" prefWidth="861.0">
+                <children>
+                    <Label contentDisplay="CENTER" prefHeight="25.0" prefWidth="231.0" text="Email" textFill="#efddf2">
+                        <font>
+                            <Font name="System Bold" size="17.0" />
+                        </font>
+                        <HBox.margin>
+                            <Insets left="40.0" />
+                        </HBox.margin>
+                    </Label>
+                    <Label fx:id="email" contentDisplay="CENTER" prefHeight="25.0" prefWidth="209.0" text="sajitkhadka@gmail.com" textFill="#efddf2">
+                        <font>
+                            <Font name="System Bold" size="17.0" />
+                        </font>
+                    </Label>
+                </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="861.0">
+                <children>
+                    <Label contentDisplay="CENTER" prefHeight="25.0" prefWidth="229.0" text="username" textFill="#efddf2">
+                        <font>
+                            <Font name="System Bold" size="17.0" />
+                        </font>
+                        <HBox.margin>
+                            <Insets left="40.0" />
+                        </HBox.margin>
+                    </Label>
+                    <Label fx:id="username" contentDisplay="CENTER" prefHeight="25.0" prefWidth="200.0" text="" textFill="#efddf2">
+                        <font>
+                            <Font name="System Bold" size="17.0" />
+                        </font>
+                    </Label>
+                </children>
+            </HBox>
+            <HBox prefHeight="41.0" prefWidth="861.0">
+                <children>
+                    <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="230.0" text="Phone" textFill="#efddf2">
+                        <font>
+                            <Font name="System Bold" size="17.0" />
+                        </font>
+                        <HBox.margin>
+                            <Insets left="40.0" />
+                        </HBox.margin>
+                    </Label>
+                    <Label fx:id="mobile" contentDisplay="CENTER" prefHeight="27.0" prefWidth="228.0" text="" textFill="#efddf2">
+                        <font>
+                            <Font name="System Bold" size="17.0" />
+                        </font>
+                    </Label>
+                </children>
+            </HBox>
+      <HBox prefHeight="41.0" prefWidth="861.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="230.0" text="Address Line 1" textFill="#efddf2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="address1" contentDisplay="CENTER" prefHeight="27.0" prefWidth="228.0" text="" textFill="#efddf2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="41.0" prefWidth="861.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="230.0" text="Address Line 2" textFill="#efddf2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="address2" contentDisplay="CENTER" prefHeight="27.0" prefWidth="228.0" text="N/A" textFill="#efddf2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+            <HBox prefHeight="39.0" prefWidth="861.0">
+                <children>
+                    <Label contentDisplay="CENTER" prefHeight="29.0" prefWidth="232.0" text="Emergency Contact Name" textFill="#efddf2">
+                        <font>
+                            <Font name="System Bold" size="17.0" />
+                        </font>
+                        <HBox.margin>
+                            <Insets left="40.0" />
+                        </HBox.margin>
+                    </Label>
+                    <Label fx:id="eContactName" contentDisplay="CENTER" prefHeight="29.0" prefWidth="244.0" text="" textFill="#efddf2">
+                        <font>
+                            <Font name="System Bold" size="17.0" />
+                        </font>
+                    </Label>
+                </children>
+            </HBox>
+      <HBox prefHeight="39.0" prefWidth="861.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="29.0" prefWidth="232.0" text="Emergency Contact Number" textFill="#efddf2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="eContact" contentDisplay="CENTER" prefHeight="29.0" prefWidth="244.0" text="" textFill="#efddf2">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+        </children>
+    </VBox>

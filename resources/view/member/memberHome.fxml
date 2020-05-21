@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="homePane" prefHeight="701.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gms.controller.member.HomeController">
+        <children>
+            <HBox minHeight="-Infinity" prefHeight="90.0" prefWidth="200.0">
+                <children>
+                    <VBox prefHeight="61.0" prefWidth="771.0">
+                        <children>
+                            <HBox prefHeight="90.0" prefWidth="771.0">
+                                <children>
+                                    <Label prefHeight="92.0" prefWidth="126.0" text="Home" textFill="#efddf2">
+                                        <font>
+                                            <Font name="Arial Rounded MT Bold" size="18.0" />
+                                        </font>
+                                        <HBox.margin>
+                                            <Insets left="20.0" />
+                                        </HBox.margin>
+                                    </Label>
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <HBox minHeight="-Infinity" prefHeight="0.5" style="-fx-background-color: #dee2f4;" VBox.vgrow="NEVER" />
+      <HBox prefHeight="555.0" prefWidth="533.0">
+         <children>
+            <Pane prefHeight="467.0" prefWidth="453.0" styleClass="schedule">
+               <HBox.margin>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </HBox.margin>
+               <children>
+                  <Label fx:id="labelCurrentSchedule" alignment="CENTER" layoutX="99.0" layoutY="-23.0" prefHeight="47.0" prefWidth="266.0" styleClass="schedule_head" text="Your next Schedule" textFill="#805252">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <VBox fx:id="exerciseList" layoutX="27.0" layoutY="100.0" prefHeight="212.0" prefWidth="399.0" />
+                  <Label fx:id="level" alignment="CENTER" layoutX="99.0" layoutY="34.0" prefHeight="21.0" prefWidth="266.0" textFill="#26ff43" />
+                  <Button fx:id="buttonBegin" layoutX="99.0" layoutY="350.0" mnemonicParsing="false" onAction="#beginExercise" prefHeight="31.0" prefWidth="266.0" text="Begin Exercise" />
+                  <Label fx:id="dayLabel" alignment="CENTER" layoutX="96.0" layoutY="55.0" prefHeight="21.0" prefWidth="266.0" textFill="#26ff43" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+
+        </children>
+   <stylesheets>
+      <URL value="@../../css/member/member.css" />
+      <URL value="@../../css/member/memberHome.css" />
+   </stylesheets>
+    </VBox>

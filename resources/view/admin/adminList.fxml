@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="adminList" prefHeight="697.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gms.controller.Admin.AdminListController">
+    <children>
+        <HBox prefHeight="90.0" prefWidth="200.0">
+            <children>
+                <VBox prefHeight="90.0" prefWidth="864.0">
+                    <children>
+                        <HBox minHeight="-Infinity" prefHeight="90.0" prefWidth="855.0">
+                            <children>
+                                <Label prefHeight="90.0" prefWidth="195.0" text="Admin List" textFill="#efddf2">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox minHeight="-Infinity" prefHeight="0.5" style="-fx-background-color: #dee2f4;" VBox.vgrow="NEVER" />
+        <HBox minHeight="-Infinity" prefHeight="75.0" prefWidth="861.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#addAdmin" prefHeight="31.0" prefWidth="198.0" text="Add New Admin">
+                    <HBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox prefWidth="861.0" VBox.vgrow="ALWAYS">
+            <children>
+                <VBox prefHeight="502.0" prefWidth="736.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <HBox prefHeight="54.0" prefWidth="861.0">
+                            <children>
+                                <Label prefHeight="62.0" prefWidth="235.0" text="List of All Admins" textFill="#cdcdcd">
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="335.0" prefWidth="861.0">
+                            <children>
+                                <TableView fx:id="AdminTable" prefHeight="295.0" prefWidth="689.0" style="-fx-background-color: rgb(238, 240, 240,0.3);">
+                                    <columns>
+                                        <TableColumn fx:id="admin_fname" prefWidth="151.0" text="First Name" />
+                                        <TableColumn fx:id="admin_lname" prefWidth="186.0" text="Last Name" />
+                                        <TableColumn fx:id="admin_phone" prefWidth="167.0" text="Phone" />
+                                        <TableColumn fx:id="admin_email" prefWidth="184.0" text="Email" />
+                                    </columns>
+                                    <HBox.margin>
+                                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                    </HBox.margin>
+                                </TableView>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

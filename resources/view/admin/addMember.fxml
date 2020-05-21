@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="addMemberPane" prefHeight="712.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gms.controller.Admin.AddMemberController">
+        <children>
+            <HBox prefHeight="90.0" prefWidth="200.0">
+                <children>
+                    <VBox prefHeight="61.0" prefWidth="771.0">
+                        <children>
+                            <HBox prefHeight="90.0" prefWidth="771.0">
+                                <children>
+                                    <Label prefHeight="90.0" prefWidth="138.0" text="Create Account" textFill="#efddf2">
+                                        <font>
+                                            <Font name="Arial Rounded MT Bold" size="18.0" />
+                                        </font>
+                                        <HBox.margin>
+                                            <Insets left="20.0" />
+                                        </HBox.margin>
+                                    </Label>
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <HBox prefHeight="0.5" style="-fx-background-color: #dee2f4;" VBox.vgrow="NEVER" />
+      <HBox prefWidth="861.0">
+         <children>
+            <Label fx:id="labelInfo" prefHeight="30.0" prefWidth="841.0" textFill="#d9ecf2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefWidth="861.0">
+         <children>
+            <Label prefHeight="51.0" prefWidth="156.0" text="First Name" textFill="#d9ecf2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtfname" prefHeight="31.0" prefWidth="302.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefWidth="861.0">
+         <children>
+            <Label prefHeight="51.0" prefWidth="156.0" text="Last Name" textFill="#d9ecf2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtlname" prefHeight="31.0" prefWidth="302.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefWidth="861.0">
+         <children>
+            <Label prefHeight="51.0" prefWidth="155.0" text="username" textFill="#d9ecf2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtusername" prefHeight="31.0" prefWidth="302.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="labelUserInfo" prefHeight="49.0" prefWidth="213.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefWidth="861.0">
+         <children>
+            <Label prefHeight="51.0" prefWidth="155.0" text="password" textFill="#d9ecf2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtpassword" prefHeight="31.0" prefWidth="302.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefWidth="861.0">
+         <children>
+            <Label prefHeight="51.0" prefWidth="154.0" text="Reenter Password" textFill="#d9ecf2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtrpassword" prefHeight="31.0" prefWidth="300.0">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="labelPasswordInfo" prefHeight="49.0" prefWidth="213.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="83.0" prefWidth="861.0">
+         <children>
+            <Button fx:id="buttonCreateAccount" mnemonicParsing="false" onAction="#createAccount" prefHeight="33.0" prefWidth="220.0" text="Create Account">
+               <HBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefWidth="861.0">
+         <children>
+            <Label fx:id="createAccountError" prefHeight="51.0" prefWidth="154.0" textFill="#fc0c0c">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="labelPasswordInfo1" prefHeight="49.0" prefWidth="213.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+        </children>
+    </VBox>

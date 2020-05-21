@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="homePane" prefHeight="400.0" prefWidth="600.0" stylesheets="@/css/member/member.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gms.controller.Admin.HomeController">
+   <children>
+      <HBox  prefHeight="90.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="90.0" prefWidth="875.0">
+               <children>
+                  <HBox minHeight="-Infinity" prefHeight="90.0">
+                     <children>
+                        <Label prefHeight="90.0" prefWidth="208.0" text="Home" textFill="#efddf2">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox minHeight="-Infinity" prefHeight="0.5" style="-fx-background-color: #dee2f4;">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </HBox>
+      <HBox prefHeight="522.0" prefWidth="445.0">
+         <children>
+            <Label text="Welcome Prekshya Aryal !!" textFill="#efddf2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="50.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="40.0" right="10.0" top="160.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

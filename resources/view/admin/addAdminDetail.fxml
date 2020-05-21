@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.gms.controller.Admin.PreferenceController"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <HBox prefHeight="90.0" prefWidth="200.0">
+            <children>
+                <VBox prefHeight="61.0" prefWidth="771.0">
+                    <children>
+                        <HBox prefHeight="90.0" prefWidth="771.0">
+                            <children>
+                                <Label prefHeight="90.0" prefWidth="220.0" text="Complete Registration" textFill="#efddf2">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox prefHeight="0.5" style="-fx-background-color: #dee2f4;" VBox.vgrow="NEVER" />
+        <HBox prefWidth="861.0">
+            <children>
+                <Label prefHeight="51.0" prefWidth="163.0" text="Package" textFill="#d9ecf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Label>
+                <CheckBox disable="true" mnemonicParsing="false" prefHeight="48.0" prefWidth="147.0" selected="true" text="Gym and Cardio" />
+                <CheckBox mnemonicParsing="false" prefHeight="48.0" prefWidth="116.0" text="Swimming" />
+            </children>
+        </HBox>
+        <HBox prefWidth="861.0">
+            <children>
+                <Label prefHeight="51.0" prefWidth="163.0" text="Instructor" textFill="#d9ecf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Label>
+                <CheckBox mnemonicParsing="false" prefHeight="48.0" prefWidth="147.0" text="Gym and Cardio" />
+                <CheckBox mnemonicParsing="false" prefHeight="48.0" prefWidth="116.0" text="Swimming" />
+            </children>
+        </HBox>
+        <HBox prefWidth="861.0">
+            <children>
+                <Label prefHeight="51.0" prefWidth="165.0" text="Gym Instructor" textFill="#d9ecf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Label>
+                <ComboBox disable="true" prefHeight="39.0" prefWidth="213.0" promptText="Select Instructor">
+                    <HBox.margin>
+                        <Insets top="8.0" />
+                    </HBox.margin>
+                </ComboBox>
+            </children>
+        </HBox>
+        <HBox prefWidth="861.0">
+            <children>
+                <Label prefHeight="51.0" prefWidth="165.0" text="Swimming Instructor" textFill="#d9ecf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Label>
+                <ComboBox disable="true" prefHeight="39.0" prefWidth="213.0" promptText="Select Instructor">
+                    <HBox.margin>
+                        <Insets top="8.0" />
+                    </HBox.margin>
+                </ComboBox>
+            </children>
+        </HBox>
+        <HBox prefWidth="861.0">
+            <children>
+                <Label prefHeight="51.0" prefWidth="165.0" text="Choose Shift" textFill="#d9ecf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Label>
+                <RadioButton mnemonicParsing="false" prefHeight="51.0" prefWidth="127.0" selected="true" text="Morning" textFill="#d9ecf2">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="toggle" />
+                    </toggleGroup>
+                </RadioButton>
+                <RadioButton mnemonicParsing="false" prefHeight="51.0" prefWidth="108.0" text="Day" textFill="#d9ecf2" toggleGroup="$toggle">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </RadioButton>
+                <RadioButton mnemonicParsing="false" prefHeight="51.0" prefWidth="167.0" text="Evening" textFill="#d9ecf2" toggleGroup="$toggle">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </RadioButton>
+            </children>
+        </HBox>
+        <HBox prefWidth="861.0">
+            <children>
+                <Label prefHeight="51.0" prefWidth="165.0" text="Total Payment " textFill="#d9ecf2">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Label>
+                <Label prefHeight="51.0" prefWidth="55.0" text="\$20" />
+            </children>
+        </HBox>
+        <HBox prefHeight="69.0" prefWidth="861.0">
+            <children>
+                <Button mnemonicParsing="false" prefHeight="9.0" prefWidth="156.0" text="Register">
+                    <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</VBox>
+
+
+

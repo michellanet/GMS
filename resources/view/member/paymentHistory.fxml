@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="paymentPane" prefHeight="697.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gms.controller.member.PaymentController">
+        <children>
+            <HBox prefHeight="90.0" prefWidth="200.0">
+                <children>
+                    <VBox prefHeight="90.0" prefWidth="864.0">
+                        <children>
+                            <HBox minHeight="-Infinity" prefHeight="90.0" prefWidth="855.0">
+                                <children>
+                                    <Label prefHeight="90.0" prefWidth="195.0" text="Payment History" textFill="#efddf2">
+                                        <font>
+                                            <Font name="Arial Rounded MT Bold" size="18.0" />
+                                        </font>
+                                        <HBox.margin>
+                                            <Insets left="20.0" />
+                                        </HBox.margin>
+                                    </Label>
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                </children>
+            </HBox>
+            <HBox minHeight="-Infinity" prefHeight="0.5" style="-fx-background-color: #dee2f4;" VBox.vgrow="NEVER" />
+      <HBox minHeight="-Infinity" prefHeight="40.0">
+         <children>
+            <Label prefHeight="36.0" prefWidth="174.0" text="Account Balance" textFill="#cdcdcd">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox minHeight="-Infinity" prefHeight="75.0" prefWidth="861.0">
+         <children>
+            <Label fx:id="labelPayment" alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="80.0" style="-fx-background-color: rgb(238, 240, 240,0.3);" text="\$36.35" textFill="#1e1e1e">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="paymentText" prefHeight="42.0" prefWidth="248.0" text="Required Payment Date: July 5 2019" textFill="#cdcdcd">
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="payButton" mnemonicParsing="false" onAction="#pay" prefHeight="31.0" prefWidth="85.0" text="Pay Now">
+               <HBox.margin>
+                  <Insets left="10.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefWidth="861.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="502.0" prefWidth="736.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox prefHeight="54.0" prefWidth="861.0">
+                     <children>
+                        <Label prefHeight="62.0" prefWidth="235.0" text="Payment History for gym" textFill="#cdcdcd">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="335.0" prefWidth="861.0">
+                     <children>
+                        <TableView fx:id="payTable" prefHeight="295.0" prefWidth="689.0" style="-fx-background-color: rgb(238, 240, 240,0.3);">
+                          <columns>
+                            <TableColumn fx:id="colPayDate" prefWidth="245.0" text="Date" />
+                            <TableColumn fx:id="colPayAmount" prefWidth="226.0" text="Amount" />
+                              <TableColumn prefWidth="217.0" text="Remarks" />
+                          </columns>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </HBox.margin>
+                        </TableView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+        </children>
+    </VBox>
